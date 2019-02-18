@@ -1,7 +1,5 @@
 # Do not edit! This file was generated via Makefile
 FROM registry.svc.ci.openshift.org/openshift/origin-v3.11:base
 
-RUN yum install -y git
-
 ADD creds-init /usr/bin/creds-init
 ENTRYPOINT ["/usr/bin/creds-init"]
